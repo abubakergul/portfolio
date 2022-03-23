@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  margin-top: 1rem;
+}
+.logo {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.logo span {
+  color: #ff585f;
+}
+.logo-dot {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #444;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #ff585f;
+}
+.myinformation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.myinformation-text {
+  margin: 5rem;
+}
+.myinformation-text p {
+  font-size: 2rem;
+  color: #ff585f;
+}
+.myinformation-text a {
+  position: relative;
+  top: 3rem;
+  padding: 1rem;
+  background: #333;
+  border-radius: 2rem;
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.2rem;
+}
+.myinformation-text a:hover {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  color: white;
+  transition: 0.3s;
+}
+.myinformation-image {
+  height: 81vh;
+  clip-path: circle();
+}
+.aboutme-text--heading-paragraph-underline {
+  position: relative;
+}
+.aboutme-content {
+  display: flex;
+  background-color: white;
+  width: 50%;
+  margin: 2rem auto;
+}
+.aboutme-image {
+  width: 50%;
+  height: 60vh;
+}
+.aboutme-image img {
+  width: 100%;
+  height: 100%;
+}
+.aboutme-text {
+  margin-top: 4rem;
+  width: 50%;
+}
+.aboutme-text-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.aboutme-text-paragraph {
+  margin-top: 1rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  padding: 0.5rem;
+}
+.underline1 {
+  width: 6rem;
+  height: 4px;
+  position: absolute;
+  top: 26px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.Previous-project-content-heading-underline {
+  position: relative;
+}
+.Previous-project-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+.Previous-project-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.Project-info {
+  position: relative;
+  width: 25%;
+  height: fit-content;
+}
+.Project-info img {
+  width: 100%;
+  height: 17rem;
+  margin-bottom: 1rem;
+}
+.Project-info a :hover {
+  opacity: 1;
+}
+.image-overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  transition: all 200ms ease-out;
+}
+.image-overlay :hover {
+  opacity: 1;
+}
+.contact-heading-underline {
+  position: relative;
+}
+.Contact-heading {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+.underline2 {
+  width: 14rem;
+  height: 4px;
+  position: absolute;
+  top: 26px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+
+.contact-content {
+  display: flex;
+}
+form {
+  background-color: white;
+  width: 55%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  color: white;
+}
+form input {
+  margin: 1rem;
+  outline: none;
+  border: 0 0 1px 0;
+  border: 0;
+  border-bottom: 2px solid white;
+  font-size: 1.2rem;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.contact-content2 a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+form label {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  color: white;
+}
+.contact-content2 img {
+  height: 2rem;
+  width: 2rem;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.contact-content2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 45%;
+  border: 2px solid;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.contact-content2 p {
+  margin: 0.5rem 0;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.contact-content2 span {
+  margin-left: 1rem;
+  color: white;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+form button {
+  top: 3rem;
+  padding: 0.5rem 0.1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  width: 20%;
+  margin: auto;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  color: white;
+  border: none;
+  outline: none;
+}
+#bot-field-hidden {
+  display: none;
+}
+form button:hover {
+  background: #333;
+  color: white;
+  transition: 0.3s;
+}
+.underline3 {
+  width: 6rem;
+  height: 4px;
+  position: absolute;
+  top: 26px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+}
+.burger {
+  display: none;
+}
+.burger div {
+  width: 30px;
+  height: 3px;
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  margin-top: 0.4rem;
+  margin-bottom: 0.1rem;
+  transition: all 0.5s ease;
+}

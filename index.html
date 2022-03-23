@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/mobile.css" />
+  </head>
+  <body>
+    <section id="Home">
+      <nav class="nav nav-real">
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <p class="logo">
+          <span>Portfolio</span><span class="logo-dot">.</span>
+        </p>
+
+        <ul class="nav-list nav-active">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About-me">About me</a></li>
+          <li><a href="#Previous-project">Previous Project</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="myinformation">
+        <div class="myinformation-text">
+          <p>I am ABU BAKER GUL</p>
+          <p>Front end developer</p>
+          <a href="#Previous-project">See my projects</a>
+        </div>
+        <div class="myinformation-image">
+          <img src="src/images/abubaker.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="About-me">
+      <div class="aboutme-content">
+        <div class="aboutme-image">
+          <img src="src/images/abubaker.jpeg" alt="" />
+        </div>
+        <div class="aboutme-text">
+          <div class="aboutme-text--heading-paragraph-underline">
+            <p class="aboutme-text-heading">About me</p>
+            <div class="underline1"></div>
+          </div>
+          <p class="aboutme-text-paragraph">
+            ⭐Senior student at university of bahrain. I build website designs
+            from scratch. Looking for remote internship as a frontend developer.
+            .<br />
+            ✔ HTML. <br />
+            ✔ CSS. <br />
+            ✔ JAVA SCRIPT (ES6). <br />
+            ✔ REACT <br />
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="Previous-project">
+      <div class="Previous-project-content-heading-underline">
+        <p class="Previous-project-heading">Previous Projects</p>
+        <div class="underline2"></div>
+      </div>
+      <div class="Previous-project-content">
+        <div class="Project-info">
+          <a target="_blank" href="https://cafe-ex.netlify.app">
+            <img src="src/images/cafe-ex.png" alt="" />
+            <p class="image-overlay">Visit ↗</p>
+          </a>
+          <p>
+            This website is completely build on vanilla JS. It is ecommerce webiste which Includes Cafe items to purchase. functionlity like add to
+            cart, signin and search are used. Click on image to the see project.
+          </p>
+          <hr>
+        </div>
+        <div class="Project-info">
+          <a target="_blank" href="https://crytpo-react-app.netlify.app">
+            <img src="src/images/crytp.png" alt="" />
+            <p class="image-overlay">Visit ↗</p>
+          </a>
+          <p>React Crytpo currency application where you can see the latest information about coins. It also include search functionlity where you search a coin you want know about its price and details</p>
+          <hr>
+        </div>
+        <div class="Project-info">
+          <a target="_blank" href="https://hiring-react-app.netlify.app">
+            <img src="src/images/hiring.png" alt="" />
+            <p class="image-overlay">Visit ↗</p>
+          </a>
+          <p> React This is a hiring application., where we fetch data from a fireBase. It include att to favorite functionlity where you can add it to your favorites and also send the message to them</p>
+          <hr>
+        </div>
+      </div>
+    </section>
+    <section id="Contact">
+      <div class="contact-heading-underline">
+        <p class="Contact-heading">Contact</p>
+        <div class="underline3"></div>
+      </div>
+      <div class="contact-content">
+        <form name="contact" data-netlify="true" onSubmit="submit" method="POST"
+        data-netlify-honeypot="bot-field" >
+        <input id="bot-field-hidden" type="text" name="bot-field">
+          <label for=""> &nbsp;Name: </label><input type="text" name="name" required /> <br />
+          <label for=""> Email: </label><input type="gmail" name="email" required  />
+          <br />
+          <label for="">&nbsp;&nbsp;&nbsp;Message: </label
+          ><input type="text" name="message" required  />
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-content2">
+          <p>
+            <img src="src/images/map.png" alt="" />
+            <span> Bahrain </span>
+          </p>
+          <p>
+            <img src="src/images/email.png" alt="" />
+            <a href="#"
+              >abubakergul24@gmail.com
+            </a>
+          </p>
+          <p>
+            <img src="src/images/github.png" alt="" />
+            <a target="_blank" href="https://github.com/abubakergul"
+              >Git hub
+            </a>
+          </p>
+          <p>
+            <img src="src/images/linkedin.png" alt="" />
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/abubaker-gul-6286ba234/"
+              >Linkdin</a
+            >
+          </p>
+        </div>
+      </div>
+
+  </body>
+</section>
+<script src="./src/js/script.js"></script>
+</html>
