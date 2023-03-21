@@ -1,7 +1,7 @@
 .parcel-cache
 dist
 node_modules
-images/abubaker.jpeg
-images/bkr.jpg
-images/cafe-ex/png
-images/hiring.pnh
+src/images/abubaker.jpeg
+src/images/bkr.jpg
+src/images/cafe-ex/png
+src/images/hiring.pnh
