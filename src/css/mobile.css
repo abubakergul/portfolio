@@ -74,14 +74,17 @@
     width: 100%;
   }
   .aboutme-image {
-    display: none;
+    margin: auto;
+    width: 80%;
   }
   .aboutme-text {
     margin-top: 0rem;
     width: 100%;
+    text-align: center;
   }
   .aboutme-content {
     width: 100%;
+    flex-direction: column;
   }
   .Previous-project-content {
     align-items: center;
@@ -91,10 +94,17 @@
     margin: 1rem 0;
     width: 100%;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Project-img {
+    width: 80%;
   }
   .Project-info img {
-    width: 20rem;
-    height: 20rem;
+    width: 100%;
+  }
+  .Project-text {
+    width: 80%;
   }
   .Previous-project-content {
     margin-top: 1rem;
@@ -107,5 +117,24 @@
   }
   .contact-content2 {
     width: 100%;
+  }
+  .skills {
+    flex-direction: column;
+    position: static;
+  }
+  .skills ul {
+    justify-content: center;
+  }
+  .skills ul li {
+    width: 3.5rem;
+  }
+  .skills p {
+    margin: auto;
+  }
+  .stack p {
+    font-size: 0.8rem;
+  }
+  .links a {
+    font-size: 0.8rem;
   }
 }

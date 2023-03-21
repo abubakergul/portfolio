@@ -29,18 +29,18 @@ nav {
   font-weight: bold;
   color: #444;
 }
-ul {
+nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
-ul li {
+nav ul li {
   list-style: none;
 }
-ul li a {
+nav ul li a {
   text-decoration: none;
 }
-ul li a:hover {
+nav ul li a:hover {
   color: #ff585f;
 }
 .myinformation {
@@ -64,6 +64,7 @@ ul li a:hover {
   text-decoration: none;
   background-color: white;
   font-size: 1.2rem;
+  color: #ff585f;
 }
 .myinformation-text a:hover {
   background-image: linear-gradient(to top left, #e52a5a, #ff585f);
@@ -74,26 +75,65 @@ ul li a:hover {
   height: 81vh;
   clip-path: circle();
 }
+.skills {
+  align-items: center;
+  bottom: 0;
+  color: #767676;
+  display: flex;
+  font-size: 1.7rem;
+  left: 0;
+  position: absolute;
+}
+.skills p {
+  border-right: 2px solid rgba(45, 46, 50, 0.5);
+  color: #ff585f;
+
+  font-family: Mulish, sans-serif;
+  font-weight: 600;
+  margin-right: 7rem;
+  padding-right: 2rem;
+}
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  list-style: none;
+}
+.skills ul li {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
+  display: flex;
+  height: 6.5rem;
+  justify-content: center;
+  width: 6.5rem;
+}
+.skills ul li img {
+  height: auto;
+  width: 3.4rem;
+}
 .aboutme-text--heading-paragraph-underline {
   position: relative;
 }
 .aboutme-content {
   display: flex;
-  background-color: white;
-  width: 50%;
-  margin: 2rem auto;
+  justify-content: space-around;
+  margin: 5rem 0;
 }
 .aboutme-image {
-  width: 50%;
-  height: 60vh;
+  width: 45%;
+  border-radius: 1.7rem;
 }
+
 .aboutme-image img {
   width: 100%;
   height: 100%;
+  border-radius: 1.7rem;
 }
 .aboutme-text {
-  margin-top: 4rem;
-  width: 50%;
+  width: 45%;
 }
 .aboutme-text-heading {
   text-align: center;
@@ -128,42 +168,97 @@ ul li a:hover {
 }
 .Previous-project-content {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   margin-top: 2rem;
 }
 .Project-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 2rem 0;
+  background-color: #fff;
+  border-radius: 1.7rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Project-text {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+  width: 35%;
+}
+.Project-text h3 {
+  color: #2d2e32;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
   position: relative;
-  width: 25%;
-  height: fit-content;
+  text-transform: uppercase;
+}
+.Project-text p {
+  color: #767676;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+.Project-img {
+  background-color: hsla(0, 0%, 46%, 0.2);
+  border-radius: 1.7rem;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  height: auto;
+  overflow: hidden;
+  width: 50%;
 }
 .Project-info img {
+  height: auto;
   width: 100%;
-  height: 17rem;
-  margin-bottom: 1rem;
 }
 .Project-info a :hover {
   opacity: 1;
 }
-.image-overlay {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  font-size: 2rem;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+.stack {
   display: flex;
-  justify-items: center;
-  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
+  margin-top: 1rem;
+}
+.stack p {
+  background-color: #fff;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  color: #000;
+  font-family: Mulish, sans-serif;
+  font-weight: 600;
+  padding: 1rem 1.3rem;
+  font-size: 1rem;
+}
+.links {
+  justify-content: space-around;
   align-items: center;
-  color: white;
-  opacity: 0;
-  transition: all 200ms ease-out;
+  display: flex;
+  margin-top: 1rem;
 }
-.image-overlay :hover {
-  opacity: 1;
+.links p {
+  color: #2d2e32;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 5px;
+  text-decoration: none;
 }
+.links a {
+  color: #2d2e32;
+  font-size: 1.3rem;
+  font-weight: 500;
+  gap: 5px;
+  text-decoration: none;
+}
+.links img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
 .contact-heading-underline {
   position: relative;
 }
@@ -285,4 +380,22 @@ form button:hover {
   margin-top: 0.4rem;
   margin-bottom: 0.1rem;
   transition: all 0.5s ease;
+}
+footer {
+  box-shadow: 0 0 10px rgba(27, 27, 27, 0.09);
+  padding: 1rem 0;
+  width: 100%;
+}
+footer .container {
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
+}
+footer h3 {
+  color: #ff585f;
+}
+.footerc {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
